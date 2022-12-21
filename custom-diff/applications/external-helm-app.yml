@@ -23,11 +23,10 @@ spec:
       - CreateNamespace=true  
    
   ignoreDifferences:
-  - group: apps
+  - group: ""
     kind: Secret
     jsonPointers:
-    - /data
-    - /stringData
+    - /data/my-password
   - group: apps
     kind: Deployment
     jsonPointers:
